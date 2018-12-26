@@ -29,16 +29,16 @@ SOFARPC从下到上分为两层：
 ![æ¨¡å—åˆ’åˆ†](https://gw.alipayobjects.com/zos/nemopainter_prod/704888fb-63a0-4fe8-b1fa-04af11a4cfb3/sofastack-sofa-rpc-zh_CN/resources-dg_2.png)
 
 主要模块及其依赖如下（基于5.5.0）：
-| 模块名 | 子模块名 | 中文名 |  说明 | 依赖 |
-|--|--|--|--|--|
-| 所有 | all | 发布打包模块 |  | 需要打包的全部模块 |
-| BOM | bom | 依赖管控模块 | 依赖版本管控	| 无 |
-| 案例 | example |示例模块 | 	| 所有 |
-| 核心 | api | api模块 | 各种基本流程接口、消息、上下文、扩展接口等| 共同 |
+|模块名|子模块名   |中文名   |说明                   |依赖       |
+|---|-------|------|---------------------|---------|
+|所有 |all    |发布打包模块|                     |需要打包的全部模块|
+|BOM|bom    |依赖管控模块|依赖版本管控               |无        |
+|案例 |example|示例模块  |                     |所有       |
+|核心 |api    |api模块 |各种基本流程接口、消息、上下文、扩展接口等|共同       |
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTM2NDgxMzBdfQ==
+eyJoaXN0b3J5IjpbLTEwOTk1OTMxNjBdfQ==
 -->
