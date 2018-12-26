@@ -20,21 +20,25 @@ SOFARPC从下到上分为两层：
 
 1.  核心层：包含了我们的RPC的核心组件（例如我们的各种接口，API，公共包）以及一些通用的实现（例如随机等负载均衡算法）。
 2.  功能实现层：所有的功能实现层的用户都是平等的，都是基于扩展机制实现的。
-![æž¶æž„å›¾](https://gw.alipayobjects.com/zos/nemopainter_prod/157f9b93-8b09-40a2-b1b9-9a255fdb06a4/sofastack-sofa-rpc-zh_CN/resources-dg_1.png)
-### 1.5 主要模块
-各个模块的实现类都只在自己模块中出现，一般不交叉依赖。需要交叉依赖的全部已经抽象到核心或者共同的模块中。
 
-目前模块划分如下：
+![æž¶æž„å›¾](https://gw.alipayobjects.com/zos/nemopainter_prod/157f9b93-8b09-40a2-b1b9-9a255fdb06a4/sofastack-sofa-rpc-zh_CN/resources-dg_1.png)
+
+### 1.5 主要模块
+各个模块的实现类都只在自己模块中出现，一般不交叉依赖。需要交叉依赖的全部已经抽象到核心或者共同的模块中。目前模块划分如下：
+
 ![æ¨¡å—åˆ’åˆ†](https://gw.alipayobjects.com/zos/nemopainter_prod/704888fb-63a0-4fe8-b1fa-04af11a4cfb3/sofastack-sofa-rpc-zh_CN/resources-dg_2.png)
+
 主要模块及其依赖如下（基于5.5.0）：
 | 模块名 | 子模块名 | 中文名 |  说明 | 依赖 |
 |--|--|--|--|--|
 | 所有 | all | 发布打包模块 |  | 需要打包的全部模块 |
-| BOM | BOM | 依赖管控模块 | 依赖版本管控	| 无 |
+| BOM | bom | 依赖管控模块 | 依赖版本管控	| 无 |
 | 案例 | example |示例模块 | 	| 所有 |
-| 核心 | core |
+| 核心 | api | api模块 | 各种基本流程接口、消息、上下文、扩展接口等| 共同 |
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTQyMzQxOF19
+eyJoaXN0b3J5IjpbLTE2NTM2NDgxMzBdfQ==
 -->
